@@ -16,10 +16,10 @@ use App\Livewire\ProductsPage;
 use App\Livewire\SuccessPage;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', HomePage::class)->name('home');
-Route::get('/categories', CategoriesPage::class)->name('categories');
-Route::get('/products', ProductsPage::class)->name('products');
-Route::get('/cart', CartPage::class)->name('cart');
+Route::get('/', HomePage::class);
+Route::get('/categories', CategoriesPage::class);
+Route::get('/products', ProductsPage::class);
+Route::get('/cart', CartPage::class);
 Route::get('/products/{product}', ProductDetailPage::class);
 
 
