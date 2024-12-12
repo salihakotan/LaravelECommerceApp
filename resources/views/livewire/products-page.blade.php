@@ -9,8 +9,8 @@
             <ul>
               @foreach($categories as $category)
               <li class="mb-4">
-                <label for="" class="flex items-center dark:text-gray-400 ">
-                  <input type="checkbox" class="w-4 h-4 mr-2">
+                <label for="{{$category->slug}}" class="flex items-center dark:text-gray-400 ">
+                  <input id="{{$category->slug}}" value="{{$category->id}}" type="checkbox" class="w-4 h-4 mr-2">
                   <span class="text-lg">{{$category->name}}</span>
                 </label>
               </li>
@@ -25,8 +25,8 @@
             <ul>
              @foreach($brands as $brand)
              <li wire:key='{{$brand->id}}' class="mb-4">
-                <label for="" class="flex items-center dark:text-gray-300">
-                  <input type="checkbox" class="w-4 h-4 mr-2">
+                <label for="{{$brand->slug}}" class="flex items-center dark:text-gray-300">
+                  <input id="{{$brand->slug}}" value="{{$brand->id}}" type="checkbox" class="w-4 h-4 mr-2">
                   <span class="text-lg dark:text-gray-400">{{$brand->name}}</span>
                 </label>
               </li>
@@ -113,30 +113,7 @@
           </div>
           <!-- pagination start -->
           <div class="flex justify-end mt-6">
-            <nav aria-label="page-navigation">
-              <ul class="flex list-style-none">
-                <li class="page-item disabled ">
-                  <a href="#" class="relative block pointer-events-none px-3 py-1.5 mr-3 text-base text-gray-700 transition-all duration-300  rounded-md dark:text-gray-400 hover:text-gray-100 hover:bg-blue-600">Previous
-                  </a>
-                </li>
-                <li class="page-item ">
-                  <a href="#" class="relative block px-3 py-1.5 mr-3 text-base hover:text-blue-700 transition-all duration-300 hover:bg-blue-200 dark:hover:text-gray-400 dark:hover:bg-gray-700 rounded-md text-gray-100 bg-blue-400">1
-                  </a>
-                </li>
-                <li class="page-item ">
-                  <a href="#" class="relative block px-3 py-1.5 text-base text-gray-700 transition-all duration-300 dark:text-gray-400 dark:hover:bg-gray-700 hover:bg-blue-100 rounded-md mr-3  ">2
-                  </a>
-                </li>
-                <li class="page-item ">
-                  <a href="#" class="relative block px-3 py-1.5 text-base text-gray-700 transition-all duration-300 dark:text-gray-400 dark:hover:bg-gray-700 hover:bg-blue-100 rounded-md mr-3 ">3
-                  </a>
-                </li>
-                <li class="page-item ">
-                  <a href="#" class="relative block px-3 py-1.5 text-base text-gray-700 transition-all duration-300 dark:text-gray-400 dark:hover:bg-gray-700 hover:bg-blue-100 rounded-md ">Next
-                  </a>
-                </li>
-              </ul>
-            </nav>
+           {{$products->links()}}
           </div>
           <!-- pagination end -->
         </div>

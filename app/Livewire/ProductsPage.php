@@ -21,8 +21,8 @@ class ProductsPage extends Component
        
         
         $productQuery = Product::query()->where("is_active",1);
-        $categories = Category::where("is_active",1)->get();
-        $brands = Brand::where("is_active",1)->get();
+        $categories = Category::where("is_active",1)->get(["id","name","slug"]);
+        $brands = Brand::where("is_active",1)->get(["id","name","slug"]);
         return view('livewire.products-page',[
             'products'=> $productQuery->paginate(6),
             'categories'=> $categories,
