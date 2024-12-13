@@ -1,66 +1,188 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Laravel ve Vite Projesi
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Bu proje, Laravel framework'ü ile oluşturulmuş modern bir web uygulamasıdır ve modern front-end araçları için Vite ile entegre edilmiştir. Filament, Livewire, Tailwind CSS ve Stripe gibi güçlü paketler çeşitli özellikler ve geliştirmeler için kullanılmaktadır.
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Gereksinimler
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- **PHP**: ^8.2
+- **Node.js**: En son kararlı sürüm (Vite ve npm scriptleri için)
+- **Composer**: En son kararlı sürüm
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+---
 
-## Learning Laravel
+## Özellikler
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- **Frontend**:
+  - Tailwind CSS ile stil oluşturma
+  - Preline ile UI bileşenleri
+  - Hızlı geliştirme ve optimize edilmiş yapılar için Vite
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+- **Backend**:
+  - Laravel framework
+  - Filament ile admin paneli ve kaynak yönetimi
+  - Livewire ile dinamik, reaktif UI bileşenleri
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- **Üçüncü Taraf Entegrasyonları**:
+  - Stripe ile ödeme işlemleri
 
-## Laravel Sponsors
+---
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## Kurulum
 
-### Premium Partners
+### Adım 1: Depoyu Klonlayın
+```bash
+git clone "https://github.com/salihakotan/LaravelECommerceApp.git"
+cd LaravelECommerceApp
+```
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+### Adım 2: Bağımlılıkları Yükleyin
+#### PHP Bağımlılıklarını Yükleyin:
+```bash
+composer install
+```
+#### Node.js Bağımlılıklarını Yükleyin:
+```bash
+npm install
+```
 
-## Contributing
+### Adım 3: Ortam Ayarları
+1. Örnek ortam dosyasını kopyalayın:
+   ```bash
+   cp .env.example .env
+   ```
+2. `.env` dosyasını şu bilgilerle güncelleyin:
+   - **Veritabanı bilgileri**
+   - **Stripe API anahtarları**
+   - **Diğer ayarlar**
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### Adım 4: Uygulama Anahtarını Üretin
+```bash
+php artisan key:generate
+```
 
-## Code of Conduct
+### Adım 5: Veritabanı Göçlerini Çalıştırın
+```bash
+php artisan migrate
+```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### Adım 6: Geliştirme Sunucusunu Başlatın
+Gerekli tüm servisleri çalıştırmak için şu komutu kullanın:
+```bash
+npm run dev
+```
 
-## Security Vulnerabilities
+---
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## Geliştirme Scriptleri
 
-## License
+### Geliştirme İçin Vite Çalıştırın
+```bash
+npm run dev
+```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### Üretim İçin Derleme
+```bash
+npm run build
+```
+
+### Laravel Uygulamasını Çalıştırın
+```bash
+php artisan serve
+```
+
+### Kuyrukları Çalıştırın
+```bash
+php artisan queue:listen --tries=1
+```
+
+### Kombine Servisler (Concurrently Kullanarak)
+```bash
+npm run dev
+```
+Bu komut, Laravel sunucusunu, kuyruk dinleyicisini ve Vite geliştirme sunucusunu eş zamanlı olarak çalıştırır.
+
+---
+
+## Temel Araçlar ve Paketler
+
+### Frontend
+- **Tailwind CSS**: Hızlı UI geliştirme için utility-first CSS framework
+- **Preline**: Önceden tasarlanmış Tailwind CSS bileşenleri
+- **Vite**: Hızlı geliştirme ve optimize edilmiş yapılar için modern front-end aracı
+
+### Backend
+- **Laravel**: Modern web uygulamaları için PHP framework
+- **Filament**: Admin paneli ve kaynak yönetim sistemi
+- **Livewire**: Laravel için dinamik, reaktif bileşenler
+- **Stripe**: Ödeme işlemleri entegrasyonu
+
+### Geliştirme
+- **Pint**: Laravel'in kod stil aracı
+- **Pest**: Test framework'ü
+- **Concurrently**: Birden fazla süreci eş zamanlı olarak çalıştırma (Laravel sunucusu, Vite, kuyruk dinleyicisi)
+
+---
+
+## Dizin Yapısı
+
+```
+├── app/          # Uygulama mantığı
+├── database/     # Göçler, fabrikalar ve tohumlayıcılar
+├── public/       # Genel varlıklar
+├── resources/    # Görünümler, stiller ve JavaScript
+├── routes/       # Uygulama rotaları
+├── storage/      # Günlükler ve önbellek dosyaları
+├── tests/        # Test dosyaları
+├── vite.config.js # Vite yapılandırması
+└── package.json  # Node.js bağımlılıkları ve scriptler
+```
+
+---
+
+## Sık Kullanılan Komutlar
+
+### Artisan Komutları
+- Göçleri çalıştır:
+  ```bash
+  php artisan migrate
+  ```
+
+- Uygulamayı çalıştır:
+  ```bash
+  php artisan serve
+  ```
+
+### Composer Komutları
+- Bağımlılıkları yükle:
+  ```bash
+  composer install
+  ```
+
+### NPM Komutları
+- Bağımlılıkları yükle:
+  ```bash
+  npm install
+  ```
+- Geliştirme sunucusunu başlat:
+  ```bash
+  npm run dev
+  ```
+- Üretim için varlıkları derle:
+  ```bash
+  npm run build
+  ```
+
+---
+
+## Ek Notlar
+- `.env` dosyanızın ortamınıza uygun şekilde doğru yapılandırıldığından emin olun.
+- Laravel'e özgü görevleri yönetmek için `artisan` komut satırı aracını kullanın.
+- Modern ve verimli bir front-end iş akışı için Vite kullanın.
+- Daha fazla bilgi için resmi dokümantasyonları inceleyin:
+  - [Laravel Dokümantasyonu](https://laravel.com/docs)
+  - [Vite Dokümantasyonu](https://vitejs.dev/)
+  - [Tailwind CSS Dokümantasyonu](https://tailwindcss.com/docs)
+  - [Filament Dokümantasyonu](https://filamentphp.com/docs)
+
