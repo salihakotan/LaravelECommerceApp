@@ -15,6 +15,10 @@ use App\Livewire\ProductDetailPage;
 use App\Livewire\ProductsPage;
 use App\Livewire\SuccessPage;
 use Illuminate\Support\Facades\Route;
+use L5Swagger\Http\Controllers\SwaggerController;
+
+Route::get('/api/documentation', [SwaggerController::class, 'docs']);
+
 
 Route::get('/', HomePage::class);
 Route::get('/categories', CategoriesPage::class);

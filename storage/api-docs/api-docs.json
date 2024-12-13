@@ -1,0 +1,520 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "version": "1.0.0",
+        "title": "Laravel Livewire API",
+        "description": "Auto-generated API documentation for Livewire endpoints"
+    },
+    "paths": {
+        "\/public\/docs.json": {
+            "get": {
+                "summary": "Endpoint: public\/docs.json",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    }
+                }
+            }
+        },
+        "\/public\/docs\/{jsonFile?}": {
+            "get": {
+                "summary": "Endpoint: public\/docs\/{jsonFile?}",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    }
+                }
+            }
+        },
+        "\/public\/docs\/asset\/{asset}": {
+            "get": {
+                "summary": "Endpoint: public\/docs\/asset\/{asset}",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    }
+                }
+            }
+        },
+        "\/api\/oauth2-callback": {
+            "get": {
+                "summary": "Endpoint: api\/oauth2-callback",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    }
+                }
+            }
+        },
+        "\/private\/docs.json": {
+            "get": {
+                "summary": "Endpoint: private\/docs.json",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    }
+                }
+            }
+        },
+        "\/private\/docs\/{jsonFile?}": {
+            "get": {
+                "summary": "Endpoint: private\/docs\/{jsonFile?}",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    }
+                }
+            }
+        },
+        "\/private\/docs\/asset\/{asset}": {
+            "get": {
+                "summary": "Endpoint: private\/docs\/asset\/{asset}",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    }
+                }
+            }
+        },
+        "\/filament\/exports\/{export}\/download": {
+            "get": {
+                "summary": "Endpoint: filament\/exports\/{export}\/download",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    }
+                }
+            }
+        },
+        "\/filament\/imports\/{import}\/failed-rows\/download": {
+            "get": {
+                "summary": "Endpoint: filament\/imports\/{import}\/failed-rows\/download",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    }
+                }
+            }
+        },
+        "\/admin\/login": {
+            "get": {
+                "summary": "Endpoint: admin\/login",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    }
+                }
+            }
+        },
+        "\/admin\/logout": {
+            "post": {
+                "summary": "Endpoint: admin\/logout",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    }
+                }
+            }
+        },
+        "\/admin": {
+            "get": {
+                "summary": "Endpoint: admin",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    }
+                }
+            }
+        },
+        "\/admin\/brands": {
+            "get": {
+                "summary": "Endpoint: admin\/brands",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    }
+                }
+            }
+        },
+        "\/admin\/brands\/create": {
+            "get": {
+                "summary": "Endpoint: admin\/brands\/create",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    }
+                }
+            }
+        },
+        "\/admin\/brands\/{record}\/edit": {
+            "get": {
+                "summary": "Endpoint: admin\/brands\/{record}\/edit",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    }
+                }
+            }
+        },
+        "\/admin\/categories": {
+            "get": {
+                "summary": "Endpoint: admin\/categories",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    }
+                }
+            }
+        },
+        "\/admin\/categories\/create": {
+            "get": {
+                "summary": "Endpoint: admin\/categories\/create",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    }
+                }
+            }
+        },
+        "\/admin\/categories\/{record}\/edit": {
+            "get": {
+                "summary": "Endpoint: admin\/categories\/{record}\/edit",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    }
+                }
+            }
+        },
+        "\/admin\/orders": {
+            "get": {
+                "summary": "Endpoint: admin\/orders",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    }
+                }
+            }
+        },
+        "\/admin\/orders\/create": {
+            "get": {
+                "summary": "Endpoint: admin\/orders\/create",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    }
+                }
+            }
+        },
+        "\/admin\/orders\/{record}": {
+            "get": {
+                "summary": "Endpoint: admin\/orders\/{record}",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    }
+                }
+            }
+        },
+        "\/admin\/orders\/{record}\/edit": {
+            "get": {
+                "summary": "Endpoint: admin\/orders\/{record}\/edit",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    }
+                }
+            }
+        },
+        "\/admin\/products": {
+            "get": {
+                "summary": "Endpoint: admin\/products",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    }
+                }
+            }
+        },
+        "\/admin\/products\/create": {
+            "get": {
+                "summary": "Endpoint: admin\/products\/create",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    }
+                }
+            }
+        },
+        "\/admin\/products\/{record}\/edit": {
+            "get": {
+                "summary": "Endpoint: admin\/products\/{record}\/edit",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    }
+                }
+            }
+        },
+        "\/admin\/users": {
+            "get": {
+                "summary": "Endpoint: admin\/users",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    }
+                }
+            }
+        },
+        "\/admin\/users\/create": {
+            "get": {
+                "summary": "Endpoint: admin\/users\/create",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    }
+                }
+            }
+        },
+        "\/admin\/users\/{record}\/edit": {
+            "get": {
+                "summary": "Endpoint: admin\/users\/{record}\/edit",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    }
+                }
+            }
+        },
+        "\/livewire\/update": {
+            "post": {
+                "summary": "Endpoint: livewire\/update",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    }
+                }
+            }
+        },
+        "\/livewire\/livewire.js": {
+            "get": {
+                "summary": "Endpoint: livewire\/livewire.js",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    }
+                }
+            }
+        },
+        "\/livewire\/livewire.min.js.map": {
+            "get": {
+                "summary": "Endpoint: livewire\/livewire.min.js.map",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    }
+                }
+            }
+        },
+        "\/livewire\/upload-file": {
+            "post": {
+                "summary": "Endpoint: livewire\/upload-file",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    }
+                }
+            }
+        },
+        "\/livewire\/preview-file\/{filename}": {
+            "get": {
+                "summary": "Endpoint: livewire\/preview-file\/{filename}",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    }
+                }
+            }
+        },
+        "\/up": {
+            "get": {
+                "summary": "Endpoint: up",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    }
+                }
+            }
+        },
+        "\/api\/documentation": {
+            "get": {
+                "summary": "Endpoint: api\/documentation",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    }
+                }
+            }
+        },
+        "\/\/": {
+            "get": {
+                "summary": "Endpoint: \/",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    }
+                }
+            }
+        },
+        "\/categories": {
+            "get": {
+                "summary": "Endpoint: categories",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    }
+                }
+            }
+        },
+        "\/products": {
+            "get": {
+                "summary": "Endpoint: products",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    }
+                }
+            }
+        },
+        "\/cart": {
+            "get": {
+                "summary": "Endpoint: cart",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    }
+                }
+            }
+        },
+        "\/products\/{slug}": {
+            "get": {
+                "summary": "Endpoint: products\/{slug}",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    }
+                }
+            }
+        },
+        "\/login": {
+            "get": {
+                "summary": "Endpoint: login",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    }
+                }
+            }
+        },
+        "\/register": {
+            "get": {
+                "summary": "Endpoint: register",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    }
+                }
+            }
+        },
+        "\/forgot": {
+            "get": {
+                "summary": "Endpoint: forgot",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    }
+                }
+            }
+        },
+        "\/reset\/{token}": {
+            "get": {
+                "summary": "Endpoint: reset\/{token}",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    }
+                }
+            }
+        },
+        "\/logout": {
+            "get": {
+                "summary": "Endpoint: logout",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    }
+                }
+            }
+        },
+        "\/checkout": {
+            "get": {
+                "summary": "Endpoint: checkout",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    }
+                }
+            }
+        },
+        "\/my-orders": {
+            "get": {
+                "summary": "Endpoint: my-orders",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    }
+                }
+            }
+        },
+        "\/my-orders\/{order_id}": {
+            "get": {
+                "summary": "Endpoint: my-orders\/{order_id}",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    }
+                }
+            }
+        },
+        "\/success": {
+            "get": {
+                "summary": "Endpoint: success",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    }
+                }
+            }
+        },
+        "\/cancel": {
+            "get": {
+                "summary": "Endpoint: cancel",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    }
+                }
+            }
+        },
+        "\/storage\/{path}": {
+            "get": {
+                "summary": "Endpoint: storage\/{path}",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    }
+                }
+            }
+        }
+    }
+}

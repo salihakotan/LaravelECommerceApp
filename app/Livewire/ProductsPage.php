@@ -13,6 +13,13 @@ use Livewire\Attributes\Url;
 use Livewire\Component;
 use Livewire\WithPagination;
 
+/**
+ * @OA\Info(
+ *     version="1.0.0",
+ *     title="Laravel E-Commerce API",
+ *     description="Swagger API Documentation for Laravel E-Commerce App"
+ * )
+ */
 
 #[Title('Products - UHDWonders')]
 class ProductsPage extends Component

@@ -10,6 +10,21 @@ use Livewire\Component;
 #[Title('Home Page - UHDWonders')]
 class HomePage extends Component
 {
+    
+    
+ /**
+ * @OA\Get(
+ *     path="/cart",
+ *     summary="Cart page",
+ *     description="Returns the current user's shopping cart",
+ *     tags={"Cart"},
+ *     @OA\Response(
+ *         response=200,
+ *         description="Success"
+ *     )
+ * )
+ */
+
     public function render()
     {
         $brands= Brand::where('is_active',1)->get();
