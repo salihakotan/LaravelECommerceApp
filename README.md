@@ -1,3 +1,10 @@
+ ![preview](0.png) 
+ ![preview](1.png) 
+ ![preview](2.png) 
+ ![preview](3.png) 
+
+---
+
 # Laravel ve Vite Projesi
 
 Bu proje, Laravel framework'ü ile oluşturulmuş modern bir web uygulamasıdır ve modern front-end araçları için Vite ile entegre edilmiştir. Filament, Livewire, Tailwind CSS ve Stripe gibi güçlü paketler çeşitli özellikler ve geliştirmeler için kullanılmaktadır.
