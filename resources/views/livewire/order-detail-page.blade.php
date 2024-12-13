@@ -77,7 +77,7 @@
             @php
             $status = '';
             if($order->status == "new"){
-              $status = '<span class="bg-blue-500 py-1 px-3 rounded text-white shadow">New</span>';
+              $status = '<span class="bg-pink-600 py-1 px-3 rounded text-white shadow">New</span>';
             }
             if($order->status == "processing"){
               $status = '<span class="bg-yellow-500 py-1 px-3 rounded text-white shadow">Processing</span>';
@@ -120,7 +120,7 @@
         
             
             if($order->payment_status == "pending") {
-              $payment_status = '<span class="bg-blue-500 py-1 px-3 rounded text-white shadow">Pending</span>';
+              $payment_status = '<span class="bg-pink-600 py-1 px-3 rounded text-white shadow">Pending</span>';
             }
             if($order->payment_status == "paid") {
               $payment_status = '<span class="bg-green-600 py-1 px-3 rounded text-white shadow">Paid</span>';

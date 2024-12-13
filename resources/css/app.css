@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.from-pink-200 {
+    --tw-gradient-from: #febfec var(--tw-gradient-from-position);
+    --tw-gradient-to: rgb(191 219 254 / 0) var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.to-pink-200 {
+    --tw-gradient-to: #ff52b3 var(--tw-gradient-to-position);
+}
+
+.text-pink-600 {
+    --tw-text-opacity: 1;
+    color: rgb(235 37 154);
+}
+
+.bg-pink-600 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 38 166);
+}
+
+.text-pink-500 {
+    --tw-text-opacity: 1;
+    color: rgb(255 0 179);
+}

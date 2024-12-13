@@ -7,7 +7,7 @@
                         <h1 class="block text-2xl font-bold text-gray-800 dark:text-white">Forgot password?</h1>
                         <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">
                             Remember your password?
-                            <a class="text-blue-600 decoration-2 hover:underline font-medium dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                            <a class="text-pink-500 decoration-2 hover:underline font-medium dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
                                 href="/login">
                                 Sign in here
                             </a>
@@ -50,7 +50,7 @@
                                 </div>
                                 <!-- End Form Group -->
                                 <button type="submit"
-                                    class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">Reset
+                                    class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-pink-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">Reset
                                     password</button>
                             </div>
                         </form>

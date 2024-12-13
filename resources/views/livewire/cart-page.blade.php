@@ -72,7 +72,7 @@
             <span class="font-semibold">{{Number::currency($grand_total,'TRY','wetr_TR')}}</span>
           </div>
           @if($cart_items)
-          <a href="/checkout" class="block text-center bg-blue-500 text-white py-2 px-4 rounded-lg mt-4 w-full">Checkout</a>
+          <a href="/checkout" class="block text-center bg-pink-500 text-white py-2 px-4 rounded-lg mt-4 w-full">Checkout</a>
 
           @endif
         </div>
